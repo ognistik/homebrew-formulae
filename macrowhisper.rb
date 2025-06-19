@@ -2,7 +2,7 @@ class Macrowhisper < Formula
   desc "Automation helper application for Superwhisper dictation app"
   homepage "https://github.com/ognistik/macrowhisper"
   url "https://github.com/ognistik/macrowhisper/releases/download/v1.1.0/macrowhisper-1.1.0-macos.tar.gz"
-  sha256 "6cd70cae21ee2af3607e5b9492c0b7e3e6c8bc4e309d9e3427b8a4f4b4f501e1"
+  sha256 "c1962c02140e8f26d7dc81d29b5fa4649b189b26b81cb092f01f5c678624e2a3"
   license "GPL-3.0"
   head "https://github.com/ognistik/macrowhisper.git", branch: "main"
 
@@ -33,13 +33,13 @@ class Macrowhisper < Formula
       
       2. Verify correct Superwhisper folder path and/or other basic settings
       
-      3.Install as a system service (this command installs and runs it):
+      3.Install as a system service (to run in background):
         macrowhisper --start-service
       
       Or run macrowhisper directly:
         macrowhisper
 
-      IMPORTANT: If upgrading, restart service
+      IMPORTANT: If upgrading, start or restart service
         macrowhisper --restart-service
       
       For more information and documentation, visit:
