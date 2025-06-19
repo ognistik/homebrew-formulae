@@ -1,9 +1,8 @@
 class Macrowhisper < Formula
   desc "Automation helper application for Superwhisper dictation app"
   homepage "https://github.com/ognistik/macrowhisper"
-  # url "https://github.com/ognistik/macrowhisper/releases/download/v1.1.0/macrowhisper-1.1.0-macos.tar.gz"
   url "https://github.com/ognistik/macrowhisper/releases/download/v1.1.0/macrowhisper-1.1.0-macos.tar.gz"
-  sha256 "9c1b1f04959a7ac713f1f35a8eba5a4c97f6d2dfff193256fec15c5f44e2a6cd"
+  sha256 "6cd70cae21ee2af3607e5b9492c0b7e3e6c8bc4e309d9e3427b8a4f4b4f501e1"
   license "GPL-3.0"
   head "https://github.com/ognistik/macrowhisper.git", branch: "main"
 
@@ -30,16 +29,18 @@ class Macrowhisper < Formula
       To use macrowhisper:
       
       1. First, configure it by running:
-         macrowhisper --reveal-config
+        macrowhisper --reveal-config
       
-      2. Edit the configuration file to set your Superwhisper folder path
+      2. Verify correct Superwhisper folder path and/or other basic settings
       
-      3. Run macrowhisper in the background:
-         macrowhisper
+      3.Install as a system service (this command installs and runs it):
+        macrowhisper --start-service
       
-      Or install as a system service:
-         macrowhisper --install-service
-         macrowhisper --start-service
+      Or run macrowhisper directly:
+        macrowhisper
+
+      IMPORTANT: If upgrading, restart service
+        macrowhisper --restart-service
       
       For more information and documentation, visit:
       https://github.com/ognistik/macrowhisper
