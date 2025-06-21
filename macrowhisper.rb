@@ -2,7 +2,7 @@ class Macrowhisper < Formula
   desc "Automation helper application for Superwhisper dictation app"
   homepage "https://github.com/ognistik/macrowhisper"
   url "https://github.com/ognistik/macrowhisper/releases/download/v1.1.0/macrowhisper-1.1.0-macos.tar.gz"
-  sha256 "d12af44e670e4580e4154abd4b07f5cbcc7310de9dc786699863229c70c5d07e"
+  sha256 "366cf0775169b8b1d753e56d2cedbe5b3b28c9c41c887571d054944036e63537"
   license "GPL-3.0"
   head "https://github.com/ognistik/macrowhisper.git", branch: "main"
 
