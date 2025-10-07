@@ -1,8 +1,8 @@
 class Macrowhisper < Formula
   desc "Automation helper application for Superwhisper dictation app"
   homepage "https://github.com/ognistik/macrowhisper"
-  url "https://github.com/ognistik/macrowhisper/releases/download/v1.3.3/macrowhisper-1.3.3-macos.tar.gz"
-  sha256 "c38cf536609cb4e6ff919d1dd6c5ab3004cd2907caa97e8d2e609cc8dde88406"
+  url "https://github.com/ognistik/macrowhisper/releases/download/v1.3.4/macrowhisper-1.3.4-macos.tar.gz"
+  sha256 "f9b71916dc11febd43188205fec4b6bc6b044372033e45ad53a4c617b1c92529"
   license "GPL-3.0"
   head "https://github.com/ognistik/macrowhisper.git", branch: "main"
 
@@ -20,7 +20,7 @@ class Macrowhisper < Formula
 
   test do
     # Test basic functionality
-    assert_match "macrowhisper version 1.3.3", shell_output("#{bin}/macrowhisper --version")
+    assert_match "macrowhisper version 1.3.4", shell_output("#{bin}/macrowhisper --version")
     
     # Test help command
     assert_match "Usage: macrowhisper", shell_output("#{bin}/macrowhisper --help")
